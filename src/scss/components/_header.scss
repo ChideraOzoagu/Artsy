@@ -1,0 +1,35 @@
+body{
+    font-family: 'Satoshi', sans-serif;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $black-100;
+    font-family: 'STIX Two Text', sans-serif;
+    cursor: pointer;
+}
+.nav-btn, .search-btn, .cart-btn{
+    font-size: 2rem;
+    cursor: pointer;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: $white-primary;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+
+    a{
+        color: $black-100;
+    }
+}
+.cart-btn {
+    margin-left: 1rem;
+}
+.nav-close {
+    font-size: 2.5rem;
+}

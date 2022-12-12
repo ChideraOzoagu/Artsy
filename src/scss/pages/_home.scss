@@ -1,0 +1,163 @@
+body {
+  scroll-behavior: smooth;
+}
+.first-section {
+  padding: 7rem 1rem 1rem;
+}
+.main_paragraph-1 {
+  font-family: "Clash Display", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.main_paragraph-2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+.hero-mobile {
+  min-height: 400px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+
+  img {
+    max-width: 100%;
+    position: absolute;
+  }
+}
+.loading {
+  font-size: 2.5rem;
+  text-align: center;
+  color: $black-100;
+  font-weight: 500;
+  padding-top: 2rem;
+}
+.featured-products {
+  padding: 2rem;
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+.featured-img-container {
+  position: relative;
+  max-width: 30rem;
+
+
+  img {
+    width: 100%;
+    max-width: 30rem;
+    opacity: 1;
+  }
+
+  h3 {
+    position: absolute;
+    top: 3.5rem;
+    left: 3rem;
+    font-size: 2.1rem;
+    color: $white-primary;
+    z-index: 1;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 1px;
+    font-family: 'Clash Display', sans-serif;
+  }
+  button {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+
+    svg {
+      font-size: 3rem;
+    }
+  }
+}
+.single-product {
+  margin-top: 2rem;
+  max-width: 30rem;
+}
+.single-product_text {
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-top: 1rem;
+}
+@media (max-width: 350px) {
+  .featured-img-container {
+    h3 {
+      font-size: 1.5rem;
+    }
+    button svg {
+      font-size: 2rem;
+    }
+  }
+}
+.featured-img-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  max-width: 30rem;
+  height: 98%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.contributors {
+  display: flex;
+  align-items: center;
+  padding-block: 1rem;
+  border-bottom: 1px solid $black-100;
+
+  
+  :nth-child(5){
+    position: relative;
+    right: 40px;
+  }
+  :nth-child(4){
+    position: relative;
+    right: 30px;
+  }
+  :nth-child(3){
+    position: relative;
+    right: 20px;
+  }
+  :nth-child(2){
+    position: relative;
+    right: 10px;
+  }
+  :nth-child(1){
+    position: relative;
+  }
+  p {
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 440px){
+  .contributors{
+    flex-direction: column;
+    align-items: flex-start;
+p {
+  padding-top: 10px;
+}
+  }
+}
+
+
+// Media query
+@media screen and (max-width: 767px) {
+  .carousel-container {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-mobile {
+    display: none;
+  }
+}

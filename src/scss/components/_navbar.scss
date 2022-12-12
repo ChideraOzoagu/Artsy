@@ -1,0 +1,51 @@
+.nav-mobile {
+  background-color: $white-primary;
+  padding: 2rem;
+  position: fixed;
+  inset: 0;
+  scale: 0;
+  transition: $transition-primary;
+  z-index: 50;
+
+  a {
+    color: $black-100;
+  }
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-close {
+  cursor: pointer;
+}
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 5rem;
+}
+.nav-container a {
+  color: $black-100;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.show-nav {
+  scale: 1;
+}
+.chat_with_us-btn {
+  background-color: #3341c1;
+  width: 4rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+
+  svg {
+    font-size: 2rem;
+    color: $white-primary;
+  }
+}
