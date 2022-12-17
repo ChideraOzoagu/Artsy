@@ -3,7 +3,7 @@ import { HiX } from "react-icons/hi";
 import { BsChatLeftFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-const navigation = [
+export const navigation = [
   {
     text: "Home",
     link: "/",
@@ -23,6 +23,7 @@ const navigation = [
 ];
 const Navbar = ({ showNav, setShowNav }) => {
   return (
+    <>
     <nav className={`${showNav ? "nav-mobile show-nav" : "nav-mobile"}`}>
       <div className="nav-header">
         <div className="logo">
@@ -47,6 +48,7 @@ const Navbar = ({ showNav, setShowNav }) => {
         <BsChatLeftFill />
       </button>
     </nav>
+    </>
   );
 };
 

@@ -1,0 +1,95 @@
+.newsletter {
+  padding: 5rem 2rem 2rem 1.5rem;
+
+  .newsletter-title {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    padding-bottom: 1rem;
+  }
+  .newsletter-subscribe {
+    font-weight: 500;
+  }
+}
+.newsletter-email {
+  border: 1px solid $black-100;
+  padding: 1rem;
+  width: 100%;
+  margin-block: 1rem;
+ 
+}
+.newsletter_subscribe-btn {
+  background-color: $black-100;
+  border: 1px solid $black-100;
+  color: $white-primary;
+  padding: 1rem;
+  letter-spacing: 1px;
+  width: 50%;
+  cursor: pointer;
+}
+.contact-us {
+  .reach_us {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .contact-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    svg {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+  }
+}
+@media screen and (max-width: 767px){
+    .contact-us{
+
+        .logo, ul {
+            display: none;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+  .newsletter {
+    text-align: center;
+    padding-inline: 5rem;
+  }
+  .newsletter-container {
+    border: 1px solid $black-100;
+    padding: 2rem 1rem;
+  }
+  .newsletter-email{
+    width: 30rem;
+  }
+  .newsletter_subscribe-btn {
+    width: 15rem;
+    margin-left: 1.5rem;
+  }
+  .reach_us{
+    display: none;
+  }
+  .contact-us{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 7rem;
+    gap: 1.5rem;
+
+    li{
+        padding-block: 10px;
+
+    }
+
+    a{
+        color: $black-100;
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+  }
+}

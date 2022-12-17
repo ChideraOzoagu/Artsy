@@ -1,5 +1,4 @@
 import "../src/scss/index.scss";
-// import Header from './components/Header'
 
 import SharedLayout from "./pages/SharedLayout";
 import Home from "./pages/Home";

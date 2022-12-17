@@ -8,7 +8,7 @@ body{
     font-family: 'STIX Two Text', sans-serif;
     cursor: pointer;
 }
-.nav-btn, .search-btn, .cart-btn{
+.nav-btn, .search-btn, .cart-btn, .notification-btn{
     font-size: 2rem;
     cursor: pointer;
 }
@@ -20,7 +20,7 @@ header {
     background-color: $white-primary;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 5;
 
 
     a{
@@ -32,4 +32,39 @@ header {
 }
 .nav-close {
     font-size: 2.5rem;
+}
+.notification-btn {
+margin-left: 1rem;
+}
+.nav-desktop{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+    color: $black-100;
+    font-weight: 500;
+    padding-inline: 5px;
+
+    .link:hover {
+        border-bottom: 1px solid $black-100;
+    }
+}
+.active{
+    border-bottom: 2px solid $black-100;
+}
+@media screen and (min-width: 768px){
+    .nav-btn{
+        display: none;
+    }
+    header {
+        padding-inline: 4rem;
+    }
+}
+@media screen  and (max-width: 767px){
+    .notification-btn {
+        display: none;
+    }
+    .nav-desktop{
+        display: none;
+    }
 }

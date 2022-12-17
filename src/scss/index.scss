@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@700&display=swap");
-@import url('https://fonts.cdnfonts.com/css/clash-display');
-
+@import 'utils/fonts';
 @import 'utils/resets';
 @import 'utils/variables';
 
 @import 'components/header';
 @import 'components/navbar';
+@import 'components/newsletter';
 
 @import 'pages/home';
+@import 'pages/marketplace';

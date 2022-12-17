@@ -1,6 +1,6 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
-import heroImg2 from "../assets/img2.png";
+// import heroImg2 from "../assets/img2.png";
 import avatar1 from "../assets/avatar1.png";
 import avatar2 from "../assets/avatar2.png";
 import avatar3 from "../assets/avatar3.png";
@@ -13,7 +13,6 @@ const url =
 
 const FeaturedProducts = () => {
   const { loading, images } = useFetch(url);
-  // console.log(images);
   return (
     <section className="featured-products">
       <h2>Featured Products</h2>
@@ -30,20 +29,26 @@ const FeaturedProducts = () => {
                     <BsArrowRight />
                   </button>
                 </div>
-                <p className="single-product_text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                  totam, ipsa facere tenetur necessitatibus error repudiandae!
-                  Cumque veritatis at officiis.
-                </p>
-                <div className="contributors">
-                  <div>
-                    <img src={avatar1} alt="" />
-                    <img src={avatar2} alt="" />
-                    <img src={avatar3} alt="" />
-                    <img src={avatar4} alt="" />
-                    <img src={avatar5} alt="" />
+                <div className="featured-products_content">
+                    <h2>The Boolean Egyptian</h2>
+                  <p className="single-product_text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                    totam, ipsa facere tenetur necessitatibus error repudiandae!
+                    Cumque veritatis at officiis.
+                  </p>
+                  <div className="contributors">
+                    <div className="contributors_avatar">
+                      <img src={avatar1} alt="" />
+                      <img src={avatar2} alt="" />
+                      <img src={avatar3} alt="" />
+                      <img src={avatar4} alt="" />
+                      <img src={avatar5} alt="" />
+                    </div>
+                    <p>64 major contributors</p>
+                    <button>
+                      <BsArrowRight/>
+                    </button>
                   </div>
-                  <p>64 major contributors</p>
                 </div>
               </div>
           );
@@ -51,22 +56,6 @@ const FeaturedProducts = () => {
       )}
       <div className="single-product">
         <div className="featured-img-container">
-          {/* <img src={heroImg2} alt="" /> */}
-          {/* <h3>Boolean Egyptian</h3>
-          <button className="single-product-btn">
-            <BsArrowRight />
-          </button>
-        </div>
-        <p className="single-product_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam totam, ipsa facere tenetur necessitatibus error repudiandae! Cumque veritatis at officiis.</p>
-        <div className="contributors">
-            <div>
-                <img src={avatar1} alt="" />
-                <img src={avatar2} alt="" />
-                <img src={avatar3} alt="" />
-                <img src={avatar4} alt="" />
-                <img src={avatar5} alt="" />
-            </div>
-            <p>64 major contributors</p> */}
         </div>
       </div>
     </section>
