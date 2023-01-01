@@ -1,0 +1,89 @@
+.drops {
+  padding: 7rem 10px 0;
+}
+.notify_me {
+  text-align: center;
+
+  h2 {
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-block: 1rem 1.3rem;
+  }
+  button {
+    border: 1px solid $black-100;
+    padding: 0.7rem 1rem;
+    width: 150px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+.drops .sort {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+.single-drop {
+  max-width: 40rem;
+}
+.drops_img-container {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .drops_tag {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 8px;
+  }
+  .upcoming {
+    background-color: $blue-100;
+  }
+  .live_now {
+    background-color: $green-100;
+  }
+  .ended {
+    background-color: $gray-200;
+  }
+  .drops_timer {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+
+    p {
+      font-weight: 500;
+      color: $white-primary;
+      font-size: 1.3rem;
+    }
+  }
+}
+.drops_text-content {
+  padding-block: 1rem;
+
+  h3 {
+    font-size: 1.3rem;
+    padding-block: 10px;
+}
+
+  .notified {
+    color: #006ca2;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 1.1em;
+  }
+}

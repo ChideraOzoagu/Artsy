@@ -1,0 +1,167 @@
+.auctions {
+  padding-block: 6rem 2rem ;
+}
+.auction-slider {
+  padding: 1rem 10px;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  &::after {
+    font-size: 1rem !important;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    border-radius: 50%;
+  }
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: relative;
+  padding-top: 1.5rem;
+}
+.countdown-text {
+  font-family: "STIX Two Text", sans-serif;
+  font-weight: 300;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  bottom: 1rem;
+  color: white;
+  letter-spacing: 1px;
+}
+.auction_text {
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+.auction-item {
+  padding: 1rem;
+
+  .auction_img-container {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 10px 1rem;
+    img {
+      width: 100%;
+    }
+    .text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+.heart-container {
+  display: flex;
+  justify-content: right;
+}
+.heart-icon {
+  margin-bottom: 5px;
+  font-size: 2rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  color: gray;
+  cursor: pointer;
+}
+.red-fav {
+  color: red;
+}
+.creator {
+  padding: 1.5rem 0;
+
+  p {
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    span {
+      padding-left: 1rem;
+    }
+  }
+}
+.creator-name {
+  span {
+    color: #006ca2;
+  }
+}
+.bid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+
+  p {
+    color: #616161;
+    font-size: 1.2rem;
+  }
+  h3 {
+    color: #333333;
+  }
+
+  button {
+    background-color: #3341c1;
+    padding: 0.8rem 1rem;
+    width: 9.5rem;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+.top_bids {
+  padding: 0 1rem;
+}
+.auction_load-more {
+  width: 100%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1rem;
+
+  svg {
+    border: 1px solid $black-100;
+    font-size: 3rem;
+    border-radius: 50%;
+    padding: 5px;
+  }
+}
